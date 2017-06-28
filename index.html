@@ -315,7 +315,7 @@ var mySwiper = new Swiper('.swiper-container',{
 		//42
 		'<p>真的勇士敢于直面中法核的学习强度和压力！你们是我心目中的勇士。中法核的经历为你们接下来的人生道路奠定了坚实的基础，让你们有自信、有底气地迎接人生中接下来的新挑战、新机遇。</p><p>谨祝你们事业扬帆，人生起航，勇担职责，成就自我。</p><p>切勿忘：中法核留心间，指引前进路；亦难忘：一日中法核，生生中法核. 你们是学院的骄傲！</p>',
 		//43
-		'<p>邺下风流亦太奢。康园漠漠淬余霞。</p><p>青春自古无留意，岁月从来有艳葩。</p><p>曾醉饮，也烹茶。共看一树凤凰花。</p><p>雁群掠过惊飞去，剩得诗兴对日斜。</p><p>——《鹧鸪天》一阕赠别2017届毕业生</p>',
+		'<p>邺下风流亦太奢。康园漠漠淬余霞。</p><p>青春自古无留意，岁月从来有艳葩。</p><p>曾醉饮，也烹茶。共看一树凤凰花。</p><p>雁群掠过惊飞去，剩得诗兴对日斜。</p><br><p>——《鹧鸪天》一阕赠别2017届毕业生</p>',
 		//44
 		'<p>要做什么样人，就走什么样的路。</p>',
 		//45
@@ -346,6 +346,15 @@ var mySwiper = new Swiper('.swiper-container',{
 			$("#message").html(arr[parseInt($("#college").val())]);
 			$("#leader").attr('src','img/page2/leader'+$("#college").val()+".png");
 			$("#fullName").text($("#prex0").text()+$("#name0").text()+"同学：");
+
+			if($("#college").val() == '43') {
+				$('#message').css('text-indent','0em');
+
+			}
+			else{
+				$('#message').css('text-indent','2em');
+			}
+
 			var len = arr[parseInt($("#college").val())].length;
 			setTimeout(function(){
 				$('.page2').hide();
