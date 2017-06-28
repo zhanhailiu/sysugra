@@ -45,7 +45,7 @@
 				<div class = "dis">
 					<span class = "ani" id = "college0" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.3s" >逸仙魔法学院</span>
 					<span class = "ani " id = "prex0" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.7s" >博学的</span>
-					<span class = "ani " id = "name0" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.1s" >孙小偶</span>
+					<span class = "ani " id = "name0" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.1s" >张铁柱</span>
 					<img class =  "ani print" id = "print" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.5s" src="img/page1/print.png"/>
 				</div>
 				<div class = "choose1">
@@ -99,7 +99,7 @@
 						<option value="46">肿瘤防治中心</option>
 						<option value="10">附属第五医院</option>
 						<option value="8">附属第六医院</option>
-
+						<!-- <option value = "48">test </option> -->
 					</select>
 					<input type="button" id="mark1" value = "确定" />
 				</div>
@@ -285,7 +285,7 @@ var mySwiper = new Swiper('.swiper-container',{
 		//27
 		'<p>有一点理想，有一点坚持，不要将希望建立在另一个希望之上。你会成功的！</p>',
 		//28
-		'<p>值此盛夏到来之际，你们毕业了。无论是博士还是硕士，你们都有2年，3年甚至7年在康乐园的故事。</p><p>作为老师，有幸遇到你们。你们给老师带来了阳光。</p><p>作为学生，祝贺你们收获了康乐园，收获了满满的学业，收获了满满的人生……</p><p>离开康乐园后，预祝每一个人都享有满满的幸福！以后，无论是风风雨雨，晴空万里，</p><p>常回家看看！</p>',
+		'<p>值此盛夏到来之际，你们毕业了。无论是博士还是硕士，你们都有2年，3年甚至7年在康乐园的故事。</p><p>作为老师，有幸遇到你们。你们给老师带来了阳光。</p><p>作为学生，祝贺你们收获了康乐园，收获了满满的学业，收获了满满的人生……</p><p>离开康乐园后，预祝每一个人都享有满满的幸福！以后，无论是风风雨雨，晴空万里,常回家看看！</p>',
 		//29
 		'<p>康乐芳草，悠悠四载，现在你们离开了专业学习的“田野”，即将进入人生的、社会的大“田野”。漫漫旅途，不忘初心；志存高远，勇于担当。</p><p>衷心祝愿同学们前程似锦、事业有成！也期望大家心系学院发展，常回母校看看！</p>',
 		//30
@@ -323,7 +323,8 @@ var mySwiper = new Swiper('.swiper-container',{
 		//46
 		'<p>象牙塔，深耕厚植，励学笃行；</p><p>杏林路，救死扶伤，如履薄冰。</p><p>抛开得失，耐住寂寞，守护初心，砥砺前行。</p>',
 		//47
-		'<p>Congratulations class of 2017! You successfully completed your studies and we are all proud of you. As you start this new cycle in life, be daring, be strong and be persistent and surely success will come. And do not forget: you are SYSU forever!</p>'
+		'<p>Congratulations class of 2017! You successfully completed your studies and we are all proud of you. As you start this new cycle in life, be daring, be strong and be persistent and surely success will come. And do not forget: you are SYSU forever!</p>',
+		'<p>学 海 汪 洋， 毓 仁 作 圣。</p><p> 大 学 毕 业， 此 其 发 轫。</p><p> 植 基 既 固， 建 业 立 名。 </p><p>登 峰 造 极， 有 志 竟 成。</p><p> 为 社 会 福， 为 邦 家 光。</p><p> 朂 哉 诸 君， 努 力 自 强。</p>'
 		];
 	//submit control
 	$("#print").click(function(){	
@@ -353,6 +354,13 @@ var mySwiper = new Swiper('.swiper-container',{
 			}
 			else{
 				$('#message').css('text-indent','2em');
+			}
+
+			if($("#college").val() == '48') {
+				$('#message').css('margin-top','28%');
+				$('#message').css('margin-left','15%');
+			}
+			else{
 			}
 
 			var len = arr[parseInt($("#college").val())].length;
