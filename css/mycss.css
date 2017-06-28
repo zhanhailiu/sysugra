@@ -67,8 +67,8 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(../img/page1/book.png) no-repeat;
-	background-size:200% 120%;
+	background: url(../img/page1/book4.png) no-repeat;
+	background-size:200% 100%;
 	z-index: 0;
 }
 
@@ -190,7 +190,7 @@ body{
 .page1 .tw{
 	width: 60%;
 	position: absolute;
-	bottom: 0.7rem;
+	bottom: 0.85rem;
 	left: 20%;
 	text-align: center;	
 	font-size: 0.3rem;
@@ -437,8 +437,8 @@ color: rgb(154,154,154);
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(../img/page1/book.png) no-repeat;
-	background-size:200% 120%;
+	background: url(../img/page1/book4.png) no-repeat;
+	background-size:200% 100%;
 	background-position: 90% 0%;
 	z-index: 0;
 }
@@ -500,8 +500,8 @@ color: rgb(154,154,154);
 	position: absolute;
 	z-index: 1;
 	width: 23%;
-	bottom: 1.4rem;
-	margin-left: 11%;
+	bottom: 1.5rem;
+	margin-left: 14%;
 
 }
 
@@ -509,8 +509,8 @@ color: rgb(154,154,154);
 .page2 .tips{
 	width: 60%;
 	position: absolute;
-	bottom: 0.75rem;
-	margin-left: 4.5%;
+	bottom: 0.85rem;
+	margin-left: 7%;
 	font-size: 0.4rem;
 	z-index: 1;
 	color:rgb(154,154,154);
